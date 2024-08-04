@@ -9,6 +9,7 @@ const Detail = () => {
     const [detail, setDetail] = useState([])
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
+    
     useEffect(() => {
         const findDetail = products.filter(product => product.slug === slug);
         if(findDetail.length > 0) {
